@@ -15,7 +15,7 @@ int main() {
 			system(cmd);
 			system("type temp\\proxy.ini.1 | find \"var proxy\" > temp\\proxy.ini.2");
 			proxy_ini = fopen("temp\\proxy.ini.2", "r");
-			fscanf(proxy_ini, "var proxy = \"PROXY %s\;\"\;", proxy);
+			fscanf(proxy_ini, "var proxy = \"PROXY %s", proxy);
 			fclose(proxy_ini);
 			for (i = 0; i <= 30; i++) {
 				if (proxy[i] == ';' || proxy[i] == '"') {
