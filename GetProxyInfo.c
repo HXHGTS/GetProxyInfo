@@ -6,10 +6,10 @@ FILE* proxy_ini;
 char proxy[60];
 
 int main() {
-	if (_access("config", 0)) {
+	if (_access("config", 0) == -1) {
 		system("mkdir config");
 	}
-	if (_access("temp", 0)) {
+	if (_access("temp", 0) == -1) {
 		system("mkdir temp");
 	}
 	system("reg query \"HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\" | find \"ProxyEnable\" > temp\\proxyswitcher.temp");
