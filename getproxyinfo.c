@@ -9,7 +9,9 @@
  *   4. 不使用 system()/reg.exe, 不落临时文件, 固定缓冲区全部有界.
  */
 
+#ifndef _CRT_SECURE_NO_WARNINGS
 #define _CRT_SECURE_NO_WARNINGS
+#endif
 
 #include <windows.h>
 #include <winhttp.h>

@@ -5,7 +5,9 @@
  * 旧版需要管理员权限, 新版以 asInvoker 运行, 不触发 UAC.
  */
 
+#ifndef _CRT_SECURE_NO_WARNINGS
 #define _CRT_SECURE_NO_WARNINGS
+#endif
 
 #include <stdio.h>
 #include <string.h>
