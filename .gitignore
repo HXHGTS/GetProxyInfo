@@ -1,0 +1,14 @@
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.iobj
+*.ipdb
+*.lib
+*.exp
+.vs/
+Debug/
+Release/
+x64/
+x86/
+config/proxy.ini
